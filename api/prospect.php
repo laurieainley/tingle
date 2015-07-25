@@ -18,9 +18,12 @@
 		$recordings = [];
 		array_push($user[$vari], $row['user_id'], $row['name'], $row['dob'], $row['gender'], $row['interest'], $row['postcode'], $row['photo_url'], $row['range'], $row['min'], $row['max'], $recordings);
 		
-		$cur_use = $row['user_id']
+		$cur_use = $row['user_id'];
 
 		$query = "SELECT * FROM `recordings` WHERE `user_id` = $cur_use";
+
+		$result = mysqli_query($con, $query);
+
 		while ($row =mysqli_fetch_array($result)) {
 		$u_rec[$vari] = [];
 		array_push($u_rec[$vari], 'some stuff');
