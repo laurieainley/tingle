@@ -1,1 +1,5 @@
 [25-Jul-2015 23:22:36 Europe/London] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/tingle/public_html/tingle/api/prospect.php on line 11
+[25-Jul-2015 23:32:18 Europe/London] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/tingle/public_html/tingle/api/prospect.php on line 11
+[25-Jul-2015 23:32:26 Europe/London] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/tingle/public_html/tingle/api/prospect.php on line 11
+[25-Jul-2015 23:32:30 Europe/London] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/tingle/public_html/tingle/api/prospect.php on line 11
+[25-Jul-2015 23:37:13 Europe/London] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/tingle/public_html/tingle/api/prospect.php on line 11
