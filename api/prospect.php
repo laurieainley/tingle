@@ -20,11 +20,11 @@
 		
 		$cur_use = $row['user_id'];
 
-		$query = "SELECT * FROM `recordings` WHERE `user_id` = $cur_use";
+		$query2 = "SELECT * FROM `recordings` WHERE `user_id` = $cur_use";
 
-		$result = mysqli_query($con, $query);
+		$result2 = mysqli_query($con, $query2);
 
-		while ($row =mysqli_fetch_array($result)) {
+		while ($row2 =mysqli_fetch_array($result2)) {
 		$u_rec[$vari] = [];
 		array_push($u_rec[$vari], 'some stuff');
 
