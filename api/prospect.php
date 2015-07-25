@@ -9,6 +9,6 @@
 	$result = mysqli_query($con, $query); 
 	
 	while ($row =mysqli_fetch_array($result)) {
-		echo array($row['name']);
+		print_r(array($row['name']));
 	}
 ?>
