@@ -15,7 +15,7 @@
 	
 	while ($row =mysqli_fetch_array($result)) {
 		$user[$vari] = [];
-		array_push($user, $row['user_id'], $row['name'], $row['dob'], $row['gender'], $row['interest'], $row['postcode'], $row['photo_url'], $row['range'], $row['min'], $row['max']);
+		array_push($user[$vari], $row['user_id'], $row['name'], $row['dob'], $row['gender'], $row['interest'], $row['postcode'], $row['photo_url'], $row['range'], $row['min'], $row['max']);
 		
 		print_r($user[$vari]); 
 		$vari = $vari + 1; 
