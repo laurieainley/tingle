@@ -5,19 +5,23 @@
    ========================================================================== */
 
 
-body {
+body .ui-overlay-a, body .ui-page-theme-a {
 	font-family: 'Oxygen', sans-serif;
+	background-color: #FBF3EB;
 }
 
 .navbar {
-	background-color: #E5F4FE;
 	background-image: none;
-	padding: 10px 0;
+	background-color: transparent;
+	border-bottom-width: 0;
 }
 
 .logo {
 	float: left;
 	margin-right: 20px;
+	background-color: #FBF3EB;
+	border-bottom-right-radius: 20px;
+	padding: 10px 0;
 }
 
 .navbar h1 {
