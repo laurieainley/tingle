@@ -27,6 +27,8 @@
       <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
       <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
+      <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -35,32 +37,24 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+
+      <div class="logo">
+        <img src="/img/logo.png" alt="Tingle" style="width: 151px; height: 136px;" />
+      </div>
+
+      <h1>Discover</h1>
+
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
       </div>
     </nav>
 
 
     <div class="container">
+
       <!-- Example row of columns -->
       <div class="row">
+
+
 
       </div>
 
