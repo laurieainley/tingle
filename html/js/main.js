@@ -48,10 +48,10 @@ $(document).ready(function(){
 
 });
 
-$(document).on('pagebeforeshow', '#index', function(){ 
+$(document).on('pagebeforeshow', '.ui-page', function(){ 
 	$(".cp-play").bind('taphold', function(e){
 		e.preventDefault();
-		$("tingle_player").jPlayer("playHead", 0).jPlayer("play");
+		$("#tingle_player").jPlayer("playHead", 0).jPlayer("play");
 		return false;
 	});
 });
