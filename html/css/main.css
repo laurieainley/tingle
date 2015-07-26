@@ -44,3 +44,7 @@ body .ui-overlay-a, body .ui-page-theme-a {
 	width: 100%;
 	border: 1px solid #000;
 }
+
+a {
+    -webkit-touch-callout: none !important; 
+}
