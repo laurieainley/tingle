@@ -87,7 +87,7 @@ $(document).ready(function(){
 			});
 			if(currentClip < recordings.length) {
 				currentClip++;
-				$(this).jPlayer("clearMedia").jPlayer("play");
+				$(this).jPlayer("play");
 			}
 		});
 
