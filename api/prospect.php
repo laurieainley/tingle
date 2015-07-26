@@ -28,13 +28,11 @@
 			$u_rec[$vari] = [];
 			array_push($u_rec[$vari], $row2['recording_id'], $row2['speaker_id'], $row2['position'], $row2['length'], $row2['asset_url'], $row2['timestamp']);
 
-			array_push($recordings, $u_rec);
-
-			array_push($user[$vari], $recordings);
-
-			
+			array_push($recordings, $u_rec[$vari]);
 			
 		}
+
+		array_push($user[$vari], $recordings);
 
 		print_r($user[$vari]);
 
