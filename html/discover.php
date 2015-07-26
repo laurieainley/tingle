@@ -33,8 +33,8 @@ include("header.php");
         </div>
 
         <div class="match-details">
-          <h2 id="match-name"><b>Laura</b></h2>
-          <h3><span id="match-age">25</span>, <span id="match-location">London</span></h3>
+          <h2><b id="match-name"></b></h2>
+          <h3><span id="match-age"></span>, <span id="match-location">London</span></h3>
         </div>
 
       </div>

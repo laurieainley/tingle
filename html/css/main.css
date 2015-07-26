@@ -71,6 +71,7 @@ a, span {
 }
 
 .match-no {
+	cursor: pointer;
 	position: fixed;
 	bottom: -70px;
 	left: 0;
@@ -96,6 +97,7 @@ a, span {
 }
 
 .match-yes {
+	cursor: pointer;
 	position: fixed;
 	bottom: -70px;
 	right: 0;
