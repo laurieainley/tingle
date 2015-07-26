@@ -39,12 +39,6 @@ $(document).ready(function(){
 	//$(".cp-play").unbind();
 	$(".cp-circle-control").unbind();
 
-	$(".cp-play").bind('taphold', function(e){
-		e.preventDefault();
-		$("tingle_player").jPlayer("playHead", 0).jPlayer("play");
-		return false;
-	});
-
 	if($(".main-container").attr("id") == "index") {
 		$.get("../api/prospect.php", "user_id=4", function(data) {
 			console.log(data);
@@ -52,4 +46,12 @@ $(document).ready(function(){
 
 	}
 
+});
+
+$(document).on('pagebeforeshow', '#index', function(){ 
+	$(".cp-play").bind('taphold', function(e){
+		e.preventDefault();
+		$("tingle_player").jPlayer("playHead", 0).jPlayer("play");
+		return false;
+	});
 });
