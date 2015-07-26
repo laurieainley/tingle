@@ -61,6 +61,9 @@ $(document).ready(function(){
 		console.log("loading " + index);
 		currentClip = 0;
 		$("#match-name").text(user.name);
+		if(user.age == 0) {
+			user.age = 26;
+		}
 		$("#match-age").html(user.age);
 		$("#match-location").html(user.location);
 	
@@ -80,9 +83,9 @@ $(document).ready(function(){
 		$('#tingle_player').bind($.jPlayer.event.ended, function() {
 			console.log("curr clip " + recordings[currentClip].asset_url);
 			$(this).jPlayer("clearMedia").jPlayer("setMedia", {
-				oga: recordings[currentClip].asset_url
+				oga: "audio/" + recordings[currentClip].asset_url
 			});
-			if(currentClip > recordings.length) {
+			if(currentClip < recordings.length) {
 				currentClip++;
 				$(this).jPlayer("clearMedia").jPlayer("play");
 			}
