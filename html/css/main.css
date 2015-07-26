@@ -30,10 +30,17 @@ body .ui-overlay-a, body .ui-page-theme-a {
 	color: #EC142E;
 }
 
+.main-container {
+	margin-top: 160px;
+}
 
+.cp-container {
+	height: 208px;
+	width: 208px;
+}
 
-
-
-
-
-
+.pane {
+	height: 100%;
+	width: 100%;
+	border: 1px solid #000;
+}

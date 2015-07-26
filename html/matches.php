@@ -8,7 +8,7 @@ include("header.php");
       <div class="row">
 
       <!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
-      <div id="tingle_player" class="cp-jplayer"></div>
+      <div id="jquery_jplayer_1" class="cp-jplayer"></div>
 
       <div class="prototype-wrapper"> <!-- A wrapper to emulate use in a webpage and center align -->
 

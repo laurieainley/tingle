@@ -11,12 +11,18 @@ $(document).ready(function(){
 	 * Multiple instances must set the cssSelectorAncestor in the jPlayer options. Defaults to "#cp_container_1" in CirclePlayer.
 	 */
 
-	var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+	var player = new CirclePlayer("#tingle_player",
 	{
-		m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-		oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+		oga: "https://api.soundcloud.com/tracks/216345518/download?secret_token=s-qxbOP&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
 	}, {
 		cssSelectorAncestor: "#cp_container_1"
+	});
+
+	$(".cp-play").unbind();
+	$(".cp-play").unbind();
+
+	$(".cp-play").taphold(function(){
+		$("tingle_player").jPlayer("playHead", 0).jPlayer("play");
 	});
 
 });
