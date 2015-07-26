@@ -26,7 +26,7 @@
 		//loop two 
 		while ($row2 =mysqli_fetch_array($result2)) {
 			$u_rec[$vari] = [];
-			array_push($u_rec[$vari], $row2['recording_id'], $row2['speaker_id'], $row2['position'], $row2['length'], $row2['asset_url'], $row2['timestamp']);
+			$u_rec[$vari] = array("recording_id" => $row2['recording_id'], "speaker_id" = $row2['speaker_id'], "position" => $row2['position'], "length" => $row2['length'], "asset_url" => $row2['asset_url'], "timestamp" => $row2['timestamp']);
 
 			array_push($recordings, $u_rec[$vari]);
 			
