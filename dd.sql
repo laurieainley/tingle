@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 26, 2015 at 01:15 PM
+-- Generation Time: Jul 26, 2015 at 01:34 PM
 -- Server version: 5.5.42-cll
 -- PHP Version: 5.4.31
 
@@ -69,26 +69,35 @@ CREATE TABLE IF NOT EXISTS `messages` (
 --
 
 CREATE TABLE IF NOT EXISTS `recordings` (
-  `recording_id` int(10) NOT NULL,
+  `recording_id` int(11) NOT NULL AUTO_INCREMENT,
   `speaker_id` int(10) NOT NULL,
   `position` int(1) NOT NULL,
   `length` int(10) NOT NULL,
-  `assest_url` text NOT NULL,
+  `asset_url` text NOT NULL,
   `timestamp` datetime NOT NULL,
   PRIMARY KEY (`recording_id`),
   UNIQUE KEY `recording_id` (`recording_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
 
 --
 -- Dumping data for table `recordings`
 --
 
-INSERT INTO `recordings` (`recording_id`, `speaker_id`, `position`, `length`, `assest_url`, `timestamp`) VALUES
-(1, 101, 1, 6, '', '2015-07-01 00:00:00'),
-(2, 101, 2, 6, '', '2015-07-28 00:00:00'),
-(3, 105, 1, 5, '', '2015-07-16 00:00:00'),
-(4, 105, 2, 6, '', '2015-07-29 00:00:00'),
-(6, 105, 3, 6, '', '2015-07-31 00:00:00');
+INSERT INTO `recordings` (`recording_id`, `speaker_id`, `position`, `length`, `asset_url`, `timestamp`) VALUES
+(1, 7, 0, 6, 'Chris_1.ogg', '0000-00-00 00:00:00'),
+(2, 7, 1, 6, 'Chris_2.ogg', '0000-00-00 00:00:00'),
+(3, 7, 2, 6, 'Chris_3.ogg', '0000-00-00 00:00:00'),
+(4, 5, 0, 6, 'Sounds_from_Sunday_morning.ogg', '0000-00-00 00:00:00'),
+(5, 5, 1, 6, 'Solveiga_2.ogg', '0000-00-00 00:00:00'),
+(6, 5, 2, 6, 'Solveiga_3.ogg', '0000-00-00 00:00:00'),
+(7, 5, 4, 6, 'Solveiga_4.ogg', '0000-00-00 00:00:00'),
+(8, 5, 3, 6, 'Solveiga_5.ogg', '0000-00-00 00:00:00'),
+(9, 5, 5, 6, 'Solveiga_6.ogg', '0000-00-00 00:00:00'),
+(10, 4, 0, 6, 'https://soundcloud.com/tingleapp/stef/s-fY6Cf', '0000-00-00 00:00:00'),
+(11, 4, 1, 6, 'https://soundcloud.com/tingleapp/stef-2/s-yXcGF', '0000-00-00 00:00:00'),
+(12, 4, 2, 6, 'https://soundcloud.com/tingleapp/stef-3/s-Mi2tA', '0000-00-00 00:00:00'),
+(13, 4, 3, 6, 'https://soundcloud.com/tingleapp/stef-4/s-jZKOV', '0000-00-00 00:00:00'),
+(14, 4, 4, 6, 'https://soundcloud.com/tingleapp/stef-5/s-wghSC', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -109,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `max_age` int(5) NOT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_id` (`user_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `users`
@@ -119,9 +128,10 @@ INSERT INTO `users` (`user_id`, `name`, `dob`, `gender`, `interest`, `postcode`,
 (1, 'Vanja Sudar', '1990-07-01', 'm', 'm', 'LL9 9LL', '', 10, 16, 24),
 (2, 'Elliot Hughes', '1988-07-01', 'm', 'f', 'lL9 9LL', '', 16, 24, 30),
 (3, 'Patrick Naish', '1990-07-14', 'm', 'b', 'LL9 9LL', '', 12, 24, 30),
-(4, 'Stefano Bellucci', '2015-07-20', 'm', 'm', 'll9 9ll', '', 90, 1, 20),
+(4, 'Stefano Bellucci', '2015-07-20', 'm', 'f', 'll9 9ll', '', 90, 1, 20),
 (5, 'Solveiga', '1995-05-21', 'f', 'm', 'll9 9ll', '', 50, 21, 30),
-(6, 'Kevin Lewis', '1994-04-09', 'm', 'f', 'll9 9ll', '', 900, 1, 20);
+(6, 'Kevin Lewis', '1994-04-09', 'm', 'f', 'll9 9ll', '', 900, 1, 20),
+(7, 'Chris Nica', '1984-12-24', 'm', 'f', 'll9 9ll', '', 0, 0, 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
