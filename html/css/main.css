@@ -61,8 +61,9 @@ body .ui-overlay-a, body .ui-page-theme-a {
 	border: 1px solid #000;
 }
 
-a {
+a, span {
     -webkit-touch-callout: none !important; 
+    -webkit-user-select: none;
 }
 
 .match-details {
