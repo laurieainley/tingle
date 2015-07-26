@@ -11,11 +11,12 @@
 	
 	while ($row3 =mysqli_fetch_array($result3)) {
 		$interest = $row3['interest'];
+		$gender = $row3['gender'];
 	}
 
 	//first query 
 
-	$query = "SELECT * FROM `users` WHERE `user_id` <> $user_id AND `gender` = '$interest'";
+	$query = "SELECT * FROM `users` WHERE `user_id` <> $user_id AND `gender` = '$interest' AND `interest` = '$gender'";
 
 	$result = mysqli_query($con, $query);
 	//set main array and variable for lopp and array names
