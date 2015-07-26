@@ -32,7 +32,7 @@
 			
 		}
 
-		array_push($user[$vari], $recordings);
+		array_merge($user[$vari], "recordings" => $recordings);
 
 
 		array_push($data, $user[$vari]);
