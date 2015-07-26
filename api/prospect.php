@@ -35,7 +35,7 @@
 		array_push($user[$vari], $recordings);
 
 
-		array_push($data, $$user[$vari]);
+		array_push($data, $user[$vari]);
 		
 		$vari = $vari + 1; 
 	}
