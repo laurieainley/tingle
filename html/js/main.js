@@ -52,6 +52,17 @@ $(document).ready(function(){
 
 	}
 
+	if($(".main-container").attr("id") == "stef") {
+		$.get("../api/prospect.php", "user_id=4", function(data) {
+			console.log(data);
+			prospects = data;
+			currentProspect = 0;
+			loadProspect(currentProspect);
+		});
+
+	}
+
+
 	var recordings = [];
 	var currentClip = 0; 
 
@@ -67,7 +78,8 @@ $(document).ready(function(){
 		$("#match-age").html(user.age);
 		$("#match-location").html(user.location);
 	
-		var recordings = user[0];
+		recordings = [];
+		recordings = user[0];
 
 		console.log(prospects);
 
