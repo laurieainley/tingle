@@ -34,10 +34,12 @@
 
 		array_push($user[$vari], $recordings);
 
-		print_r($user[$vari]);
 
 		array_push($data, $$user[$vari]);
 		
 		$vari = $vari + 1; 
 	}
+
+	print_r($data);
+
 ?>
