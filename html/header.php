@@ -28,14 +28,14 @@
 
       <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="/js/jPlayer/css/not.the.skin.css">
-    <link rel="stylesheet" href="/js/jPlayer/circle.skin/circle.player.css">
+    <link rel="stylesheet" href="js/jPlayer/css/not.the.skin.css">
+    <link rel="stylesheet" href="js/jPlayer/circle.skin/circle.player.css">
 
-    <script type="text/javascript" src="/js/jPlayer/js/jquery.transform.js"></script>
-    <script type="text/javascript" src="/js/jPlayer/js/jquery.grab.js"></script>
-    <script type="text/javascript" src="/js/jPlayer/js/jquery.jplayer.js"></script>
-    <script type="text/javascript" src="/js/jPlayer/js/mod.csstransforms.min.js"></script>
-    <script type="text/javascript" src="/js/jPlayer/js/circle.player.js"></script>
+    <script type="text/javascript" src="js/jPlayer/js/jquery.transform.js"></script>
+    <script type="text/javascript" src="js/jPlayer/js/jquery.grab.js"></script>
+    <script type="text/javascript" src="js/jPlayer/js/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="js/jPlayer/js/mod.csstransforms.min.js"></script>
+    <script type="text/javascript" src="js/jPlayer/js/circle.player.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -50,7 +50,7 @@
         <div class="navbar-header">
 
       <div class="logo">
-        <img src="/img/logo.png" alt="Tingle" style="width: 151px; height: 136px;" />
+        <img src="img/logo.png" alt="Tingle" style="width: 151px; height: 136px;" />
       </div>
 
       <h1>Discover</h1>

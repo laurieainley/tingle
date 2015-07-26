@@ -2,7 +2,7 @@
 include("header.php");
 ?>
 
-    <div class="container main-container">
+    <div class="container main-container" id="index">
 
       <!-- Example row of columns -->
       <div class="row">
