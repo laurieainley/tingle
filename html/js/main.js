@@ -37,7 +37,7 @@ $(document).ready(function(){
 	});
 
 	//$(".cp-play").unbind();
-	$(".cp-progress-holder").unbind();
+	$(".cp-circle-control").unbind();
 
 	$(".cp-play").taphold(function(e){
 		e.preventDefault();
