@@ -20,7 +20,7 @@
 		
 		$cur_use = $row['user_id'];
 
-		$query2 = "SELECT * FROM `recordings` WHERE `user_id` = $cur_use";
+		$query2 = "SELECT * FROM `recordings` WHERE `speaker_id` = $cur_use";
 
 		$result2 = mysqli_query($con, $query2);
 
