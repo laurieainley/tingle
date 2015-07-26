@@ -32,9 +32,11 @@
 
 			array_push($user[$vari], $recordings);
 
-			print_r($user[$vari]);
+			
 			
 		}
+
+		print_r($user[$vari]);
 
 		array_push($data, $$user[$vari]);
 		
