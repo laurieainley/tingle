@@ -45,8 +45,8 @@ $(document).ready(function(){
 	});
 
 	if($(".main-container").attr("id") == "index") {
-		$.get("../api/prospects.php", "user_id=4", function() {
-
+		$.get("../api/prospect.php", "user_id=4", function(data) {
+			console.log(data);
 		});
 
 	}

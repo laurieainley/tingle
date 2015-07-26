@@ -29,7 +29,7 @@
 	while ($row =mysqli_fetch_array($result)) {
 		$user[$vari] = [];
 		$recordings = [];
-		$user[$vari] = array("user_id" => $row['user_id'], "name" => $row['name'], "dob" => $row['dob'], "gender" => $row['gender'], "interest" => $row['interest'], "postcode" => $row['postcode'], "photo_url" => $row['photo_url'], "range" => $row['range'], "min" => $row['min'], "max" => $row['max']);
+		$user[$vari] = array("user_id" => $row['user_id'], "name" => $row['name'], "dob" => $row['dob'], "gender" => $row['gender'], "interest" => $row['interest'], "postcode" => $row['postcode'], "photo_url" => $row['photo_url'], "range" => $row['range'], "min_age" => $row['min_age'], "max_age" => $row['max_age']);
 		
 		$cur_use = $row['user_id'];
 
@@ -53,6 +53,6 @@
 		$vari = $vari + 1; 
 	}
 
-	print_r($data);
+	print json_encode($data);
 
 ?>
