@@ -16,7 +16,7 @@
 	while ($row =mysqli_fetch_array($result)) {
 		$user[$vari] = [];
 		$recordings = [];
-		array_push($user[$vari], $row['user_id'], $row['name'], $row['dob'], $row['gender'], $row['interest'], $row['postcode'], $row['photo_url'], $row['range'], $row['min'], $row['max']);
+		$user[$vari] = array("user_id" => $row['user_id'], "name" => $row['name'], "dob" => $row['dob'], "gender" => $row['gender'], "interest" => $row['interest'], "postcode" => $row['postcode'], "photo_url" => $row['photo_url'], "range" => $row['range'], "min" => $row['min'], "max" => $row['max']);
 		
 		$cur_use = $row['user_id'];
 
@@ -26,7 +26,7 @@
 		//loop two 
 		while ($row2 =mysqli_fetch_array($result2)) {
 			$u_rec[$vari] = [];
-			array_push($u_rec[$vari], $row2['recording_id'], $row2['speaker_id'], $row2['position'], $row2['length'], $row2['asset_url'], $row2['timestamp']);
+			$u_rec[$vari] = array("recording_id" => $row2['recording_id'], "speaker_id" => $row2['speaker_id'], "position" => $row2['position'], "length" => $row2['length'], "asset_url" => $row2['asset_url'], "timestamp" => $row2['timestamp']);
 
 			array_push($recordings, $u_rec[$vari]);
 			

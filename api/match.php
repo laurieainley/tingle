@@ -8,7 +8,7 @@
 
 	$user_id = $_GET["user_id"];
 	//first query 
-	$query = "SELECT * FROM `users` WHERE  `suitor_id` =  $user_id OR (`target_id` = $user_id AND `mutual` = 1)";
+	$query = "SELECT * FROM `matches` WHERE `target_id` = $user_id AND `mutual` = 1";
 
 	$result = mysqli_query($con, $query);
 
