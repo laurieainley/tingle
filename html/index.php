@@ -29,14 +29,15 @@
 
       <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="/js/lib/circle-player/skin/circle.player.css">
-    <script type="text/javascript" src="/js/lib/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/dist/jplayer/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="/js/dist/add-on/jquery.jplayer.inspector.min.js"></script>
-    <script type="text/javascript" src="/js/lib/circle-player/js/jquery.transform2d.js"></script>
-    <script type="text/javascript" src="/js/lib/circle-player/js/jquery.grab.js"></script>
-    <script type="text/javascript" src="/js/lib/circle-player/js/mod.csstransforms.min.js"></script>
-    <script type="text/javascript" src="/js/lib/circle-player/js/circle.player.js"></script>
+    <link rel="stylesheet" href="/js/jPlayer/css/not.the.skin.css">
+    <link rel="stylesheet" href="/js/jPlayer/circle.skin/circle.player.css">
+
+    <script type="text/javascript" src="/js/jPlayer/js/jquery.transform.js"></script>
+    <script type="text/javascript" src="/js/jPlayer/js/jquery.grab.js"></script>
+    <script type="text/javascript" src="/js/jPlayer/js/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="/js/jPlayer/js/mod.csstransforms.min.js"></script>
+    <script type="text/javascript" src="/js/jPlayer/js/circle.player.js"></script>
+
 
 
     </head>
@@ -64,26 +65,30 @@
       <!-- Example row of columns -->
       <div class="row">
 
-        <!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
-        <div id="jquery_jplayer_1" class="cp-jplayer"></div>
+    <!-- The jPlayer div must not be hidden. Keep it at the root of the body element to avoid any such problems. -->
+    <div id="jquery_jplayer_1" class="cp-jplayer"></div>
 
-        <!-- The container for the interface can go where you want to display it. Show and hide it as you need. -->
+    <div class="prototype-wrapper"> <!-- A wrapper to emulate use in a webpage and center align -->
 
-        <div id="cp_container_1" class="cp-container">
-          <div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
-            <div class="cp-buffer-1"></div>
-            <div class="cp-buffer-2"></div>
-          </div>
-          <div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
-            <div class="cp-progress-1"></div>
-            <div class="cp-progress-2"></div>
-          </div>
-          <div class="cp-circle-control"></div>
-          <ul class="cp-controls">
-            <li><a class="cp-play" tabindex="1">play</a></li>
-            <li><a class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
-          </ul>
+
+      <!-- The container for the interface can go where you want to display it. Show and hide it as you need. -->
+
+      <div id="cp_container_1" class="cp-container">
+        <div class="cp-buffer-holder"> <!-- .cp-gt50 only needed when buffer is > than 50% -->
+          <div class="cp-buffer-1"></div>
+          <div class="cp-buffer-2"></div>
         </div>
+        <div class="cp-progress-holder"> <!-- .cp-gt50 only needed when progress is > than 50% -->
+          <div class="cp-progress-1"></div>
+          <div class="cp-progress-2"></div>
+        </div>
+        <div class="cp-circle-control"></div>
+        <ul class="cp-controls">
+          <li><a href="#" class="cp-play" tabindex="1">play</a></li>
+          <li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+        </ul>
+      </div>
+
 
       </div>
 
@@ -92,9 +97,7 @@
       <footer>
         <p>&copy; Company 2015</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
+    </div> <!-- /container -->
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
