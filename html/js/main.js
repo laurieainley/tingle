@@ -43,7 +43,7 @@ $(document).ready(function(){
 		return false;
 	});*/
 	if($(".main-container").attr("id") == "discover") {
-		$.get("../api/prospect.php", "user_id=4", function(data) {
+		$.get("../api/prospect.php", "user_id=5", function(data) {
 			console.log(data);
 			prospects = data;
 			currentProspect = 0;
