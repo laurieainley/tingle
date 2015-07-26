@@ -30,11 +30,12 @@
 
 			array_push($recordings, $u_rec);
 			
-			print_r($recordings);
+			print_r($user[$vari]);
+			
 		}
 
 		array_push($data, $$user[$vari]);
-		print_r($data); 
+		
 		$vari = $vari + 1; 
 	}
 ?>
