@@ -53,7 +53,7 @@
         <img src="img/logo.png" alt="Tingle" />
       </div>
 
-      <h1>Discover</h1>
+      <h1><?php echo $title; ?></h1>
 
         </div>
       </div>

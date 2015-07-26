@@ -36,22 +36,53 @@ $(document).ready(function(){
 		index++;
 	});
 
-	//$(".cp-play").unbind();
+	$(".cp-play").unbind();
 	$(".cp-circle-control").unbind();
-
-	if($(".main-container").attr("id") == "index") {
+	$(".cp-play").on('vmousedown', function(e){
+		e.preventDefault();
+		alert("test");
+		$("#tingle_player").jPlayer("playHead", 0).jPlayer("play");
+		return false;
+	});
+	$(".cp-play").on('vmouseup', function(e){
+		e.preventDefault();
+		alert("test2");
+		$("#tingle_player").jPlayer("stop");
+		return false;
+	});
+	if($(".main-container").attr("id") == "discover") {
 		$.get("../api/prospect.php", "user_id=4", function(data) {
 			console.log(data);
+			prospects = data;
+			currentProspect = 0;
+			loadProspect(currentProspect);
 		});
 
 	}
 
+	var recordings = user[0];
+	var currentClip = 0; 
+	
+	function loadProspect(index) {
+		user = prospects[index];
+		currentClip = 0;
+		$("#match-name").html(user.name);
+		$("#match-age").html(user.age);
+		$("#match-location").html(user.location);
+	
+		for(i = 0; i < recordings.length; i++) {
+
+			$("#tingle_player").jPlayer("clearMedia").jPlayer("setMedia", {
+				oga: recordings[currentClip]		
+			}
+
+		});
+
+		}
+
+	}
 });
 
 $(document).on('pagebeforeshow', '.ui-page', function(){ 
-	$(".cp-play").bind('taphold', function(e){
-		e.preventDefault();
-		$("#tingle_player").jPlayer("playHead", 0).jPlayer("play");
-		return false;
-	});
+
 });

@@ -25,11 +25,14 @@
 	//set main array and variable for lopp and array names
 	$data = []; 
 	$vari = 0;
+	$age = "";
 	//loop one
 	while ($row =mysqli_fetch_array($result)) {
 		$user[$vari] = [];
 		$recordings = [];
-		$user[$vari] = array("user_id" => $row['user_id'], "name" => $row['name'], "dob" => $row['dob'], "gender" => $row['gender'], "interest" => $row['interest'], "postcode" => $row['postcode'], "photo_url" => $row['photo_url'], "range" => $row['range'], "min_age" => $row['min_age'], "max_age" => $row['max_age']);
+		$now = strtotime($row["dob"]);
+		$age = floor((time() - $now)  / 60 / 60 / 24/ 365);
+		$user[$vari] = array("user_id" => $row['user_id'], "name" => $row['name'], "dob" => $row['dob'], "age" => $age, "gender" => $row['gender'], "interest" => $row['interest'], "postcode" => $row['postcode'], "photo_url" => $row['photo_url'], "range" => $row['range'], "min_age" => $row['min_age'], "max_age" => $row['max_age']);
 		
 		$cur_use = $row['user_id'];
 
