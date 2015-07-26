@@ -39,9 +39,10 @@ $(document).ready(function(){
 	//$(".cp-play").unbind();
 	$(".cp-circle-control").unbind();
 
-	$(".cp-play").taphold(function(e){
+	$(".cp-play").bind('taphold', function(e){
 		e.preventDefault();
 		$("tingle_player").jPlayer("playHead", 0).jPlayer("play");
+		return false;
 	});
 
 	if($(".main-container").attr("id") == "index") {

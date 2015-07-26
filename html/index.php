@@ -26,8 +26,8 @@ include("header.php");
           </div>
           <div class="cp-circle-control"></div>
           <ul class="cp-controls">
-            <li><a href="#" class="cp-play" tabindex="1">play</a></li>
-            <li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
+            <li><span class="cp-play" tabindex="1">play</span></li>
+            <li><span class="cp-pause" style="display:none;" tabindex="1">pause</span></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
           </ul>
         </div>
 

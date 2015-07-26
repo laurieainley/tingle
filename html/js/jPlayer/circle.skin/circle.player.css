@@ -101,7 +101,7 @@
 	position:absolute;
 }
 
-.cp-controls li a{
+.cp-controls li span{
 	position: relative;
 	display: block;
 	width:50px;
