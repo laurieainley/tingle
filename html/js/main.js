@@ -94,11 +94,11 @@ $(document).ready(function(){
 
 		$('#tingle_player').bind($.jPlayer.event.ended, function() {
 			console.log("curr clip " + recordings[currentClip].asset_url);
+				currentClip++;
 			$(this).jPlayer("clearMedia").jPlayer("setMedia", {
 				oga: "audio/" + recordings[currentClip].asset_url
 			});
 			if(currentClip < recordings.length) {
-				currentClip++;
 				$(this).jPlayer("play");
 			}
 		});
