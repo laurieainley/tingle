@@ -15,7 +15,7 @@
 
 	//first query 
 
-	$query = "SELECT * FROM `users` WHERE `user_id` <> $user_id AND `gender` = $interest";
+	$query = "SELECT * FROM `users` WHERE `user_id` <> $user_id AND `gender` = 'm'";
 
 	$result = mysqli_query($con, $query);
 	//set main array and variable for lopp and array names
