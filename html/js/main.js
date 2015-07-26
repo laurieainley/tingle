@@ -11,18 +11,39 @@ $(document).ready(function(){
 	 * Multiple instances must set the cssSelectorAncestor in the jPlayer options. Defaults to "#cp_container_1" in CirclePlayer.
 	 */
 
+  var clips = ["https://api.soundcloud.com/tracks/216393180/download?secret_token=s-fY6Cf&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20",
+  "https://api.soundcloud.com/tracks/216393354/download?secret_token=s-jZbNr&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20",
+  "https://api.soundcloud.com/tracks/216393283/download?secret_token=s-FYzkP&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
+  ];
+
+  var index = 0;
+
 	var player = new CirclePlayer("#tingle_player",
 	{
-		oga: "https://api.soundcloud.com/tracks/216345518/download?secret_token=s-qxbOP&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
+		oga: "https://api.soundcloud.com/tracks/216345518/download?secret_token=s-qxbOP&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20",
+		// oga: "https://api.soundcloud.com/tracks/216393180/download?secret_token=s-fY6Cf&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
+		// oga: "https://api.soundcloud.com/tracks/216393354/download?secret_token=s-jZbNr&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
+		// oga: "https://api.soundcloud.com/tracks/216393283/download?secret_token=s-FYzkP&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
 	}, {
 		cssSelectorAncestor: "#cp_container_1"
 	});
 
-	$(".cp-play").unbind();
-	$(".cp-play").unbind();
+	$('#tingle_player').bind($.jPlayer.event.ended, function() {
+		console.log(clips[index]);
+		$(this).jPlayer("clearMedia").jPlayer("setMedia", {
+			oga: clips[index]
+		});
+		index++;
+	});
 
-	$(".cp-play").taphold(function(){
+	//$(".cp-play").unbind();
+	$(".cp-circle-control").unbind();
+
+	$(".cp-play").taphold(function(e){
+		e.preventDefault();
 		$("tingle_player").jPlayer("playHead", 0).jPlayer("play");
 	});
+
+	//if(".main-container")
 
 });

@@ -21,7 +21,7 @@ body .ui-overlay-a, body .ui-page-theme-a {
 	margin-right: 20px;
 	background-color: #FBF3EB;
 	border-bottom-right-radius: 20px;
-	padding: 10px 0;
+	padding: 10px 0 10px 10px;
 }
 
 .navbar h1 {
