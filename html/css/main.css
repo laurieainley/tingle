@@ -19,9 +19,24 @@ body .ui-overlay-a, body .ui-page-theme-a {
 .logo {
 	float: left;
 	margin-right: 20px;
-	background-color: #FBF3EB;
-	border-bottom-right-radius: 20px;
+	background-color: #fcf8f5;
+	border-radius: 80px;
+	border-color: #db4d71;
+	border-width: 1px;
+	border-style: solid;
+	border-top-width: 0;
+	border-left-width: 0;
 	padding: 10px 0 10px 10px;
+	margin-top: -70px;
+	margin-left: -70px;
+}
+
+.logo img {
+	width: 140px;
+	height: 132px;
+	padding: 60px 30px 30px 60px;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
 .navbar h1 {
@@ -35,8 +50,9 @@ body .ui-overlay-a, body .ui-page-theme-a {
 }
 
 .cp-container {
-	height: 208px;
+	height: 160px;
 	width: 208px;
+	padding-bottom: 0;
 }
 
 .pane {
@@ -48,3 +64,58 @@ body .ui-overlay-a, body .ui-page-theme-a {
 a {
     -webkit-touch-callout: none !important; 
 }
+
+.match-details {
+	text-align: center;
+}
+
+.match-no {
+	position: fixed;
+	bottom: -70px;
+	left: 0;
+	margin-right: 20px;
+	background-color: #fcf8f5;
+	border-radius: 80px;
+	border-color: #db4d71;
+	border-width: 1px;
+	border-style: solid;
+	border-bottom-width: 0;
+	border-left-width: 0;
+	padding: 10px 0 10px 10px;
+	margin-top: -70px;
+	margin-left: -70px;
+}
+
+.match-no img {
+	width: 140px;
+	height: 132px;
+	padding: 30px 30px 60px 60px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.match-yes {
+	position: fixed;
+	bottom: -70px;
+	right: 0;
+	margin-left: 20px;
+	background-color: #fcf8f5;
+	border-radius: 80px;
+	border-color: #db4d71;
+	border-width: 1px;
+	border-style: solid;
+	border-bottom-width: 0;
+	border-right-width: 0;
+	padding: 10px 0 10px 10px;
+	margin-top: -70px;
+	margin-right: -70px;
+}
+
+.match-yes img {
+	width: 140px;
+	height: 132px;
+	padding: 30px 60px 60px 30px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+

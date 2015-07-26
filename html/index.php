@@ -31,8 +31,19 @@ include("header.php");
           </ul>
         </div>
 
-      </div>
+        <div class="match-details">
+          <h2><b>Laura</b></h2>
+          <h3>25, London</h3>
+        </div>
 
+      </div>
+        <div class="match-no">
+          <img src="img/match-no.png" alt="Reject Match" />
+        </div>
+
+        <div class="match-yes">
+          <img src="img/match-yes.png" alt="Show Interest" />
+        </div>
 <?php
 include("footer.php");
 ?>

@@ -50,7 +50,7 @@
         <div class="navbar-header">
 
       <div class="logo">
-        <img src="img/logo.png" alt="Tingle" style="width: 151px; height: 136px;" />
+        <img src="img/logo.png" alt="Tingle" />
       </div>
 
       <h1>Discover</h1>
