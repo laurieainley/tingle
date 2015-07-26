@@ -30,7 +30,7 @@
 
 			array_push($recordings, $u_rec);
 
-			array_push($user[$vari], "recording"=>$recordings);
+			array_push($user[$vari], $recordings);
 
 			
 			
