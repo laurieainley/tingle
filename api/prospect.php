@@ -8,6 +8,7 @@
 
 	$query3 = "SELECT * FROM `users` WHERE `user_id` = $user_id";
 	$result3 = mysqli_query($con, $query3);
+	
 	while ($row3 =mysqli_fetch_array($result3)) {
 		$interest = $row3['interest'];
 	}
@@ -15,7 +16,7 @@
 	//first query 
 
 	$query = "SELECT * FROM `users` WHERE `user_id` <> $user_id AND `gender` = $interest";
-
+	$result = mysqli_query($con, $query) or die(mysqli_error());
 	$result = mysqli_query($con, $query);
 	//set main array and variable for lopp and array names
 	$data = []; 
