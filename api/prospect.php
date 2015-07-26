@@ -17,21 +17,23 @@
 		$user[$vari] = [];
 		$recordings = [];
 		array_push($user[$vari], $row['user_id'], $row['name'], $row['dob'], $row['gender'], $row['interest'], $row['postcode'], $row['photo_url'], $row['range'], $row['min'], $row['max'], $recordings);
-		
+		print_r($user[$vari]);
 		$cur_use = $row['user_id'];
 
 		$query2 = "SELECT * FROM `recordings` WHERE `speaker_id` = $cur_use";
 
 		$result2 = mysqli_query($con, $query2);
-		// //loop two 
-		// while ($row2 =mysqli_fetch_array($result2)) {
-		// 	$u_rec[$vari] = [];
-		// 	array_push($u_rec[$vari], 'some stuff');
+		//loop two 
+		while ($row2 =mysqli_fetch_array($result2)) {
+			$u_rec[$vari] = [];
+			array_push($u_rec[$vari], 'some stuff');
 
-		// 	array_push($recordings, $u_rec);
-		// }
+			array_push($recordings, $u_rec);
+			
+			print_r($recordings);
+		}
 
-		// array_push($data, $$user[$vari]);
+		array_push($data, $$user[$vari]);
 		print_r($data); 
 		$vari = $vari + 1; 
 	}
