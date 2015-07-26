@@ -8,6 +8,9 @@
 
 	$query3 = "SELECT * FROM `users` WHERE `user_id` = $user_id";
 	$result3 = mysqli_query($con, $query3);
+
+	$interest = "";
+	$gender = "";
 	
 	while ($row3 =mysqli_fetch_array($result3)) {
 		$interest = $row3['interest'];
