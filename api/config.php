@@ -1,3 +1,4 @@
+<?php
 $dbhost="mysql.tingledating.com";
 $dbusername="tingledating";
 $dbpassword="ukul3l3!";
