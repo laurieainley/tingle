@@ -1,10 +1,12 @@
 <?php
-$title = "";
+$title = "Get Started";
 include("header.php");
 ?>
 
+<p><a href="discover.php?uid=1000">Start listening to some Tingle ladies</a></p>
 
-<a href="discover.php"><img src="screens/signup.png" /></a>
+<p><a href="discover.php?uid=2000">Start listening to some Tingle guys</a>
+</p>
 
 
 <?php
