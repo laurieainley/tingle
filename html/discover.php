@@ -43,7 +43,7 @@ include("header.php");
       </div>
 
       <div class="match-yes">
-        <a href="#"><img src="img/match-yes.png" alt="Show Interest" /></a>
+        <a href="#"><img src="img/match-yes.png" alt="Show Your Interest" /></a>
       </div>
     </div>
 <?php
