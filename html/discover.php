@@ -39,11 +39,11 @@ include("header.php");
 
       </div>
       <div class="match-no">
-        <img src="img/match-no.png" alt="Reject Match" />
+        <a href="#"><img src="img/match-no.png" alt="Reject Match" /></a>
       </div>
 
       <div class="match-yes">
-        <img src="img/match-yes.png" alt="Show Interest" />
+        <a href="#"><img src="img/match-yes.png" alt="Show Interest" /></a>
       </div>
     </div>
 <?php
