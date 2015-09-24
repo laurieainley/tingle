@@ -99,7 +99,8 @@ $(document).ready(function(){
 
 		$('#tingle_player').bind($.jPlayer.event.ended, function() {
 			console.log("curr clip " + recordings[currentClip].asset_url);
-				currentClip++;
+			console.dir($.jPlayer.event);
+			currentClip++;
 			if(currentClip < recordings.length) {
 				$(this).jPlayer("clearMedia").jPlayer("setMedia", {
 					oga: "tingles/" + recordings[currentClip].asset_url
