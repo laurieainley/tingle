@@ -97,7 +97,7 @@ $(document).ready(function(){
 
 		console.log("test");
 
-		$('#tingle_player').unbind();
+		$('#tingle_player').unbind($.jPlayer.event.ended);
 
 		$('#tingle_player').bind($.jPlayer.event.ended, function() {
 			console.log("curr clip " + recordings[currentClip].asset_url);
