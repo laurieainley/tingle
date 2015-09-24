@@ -38,13 +38,14 @@ include("header.php");
         </div>
 
       </div>
-        <div class="match-no">
-          <img src="img/match-no.png" alt="Reject Match" />
-        </div>
+      <div class="match-no">
+        <img src="img/match-no.png" alt="Reject Match" />
+      </div>
 
-        <div class="match-yes">
-          <img src="img/match-yes.png" alt="Show Interest" />
-        </div>
+      <div class="match-yes">
+        <img src="img/match-yes.png" alt="Show Interest" />
+      </div>
+    </div>
 <?php
 include("footer.php");
 ?>
