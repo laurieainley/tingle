@@ -19,7 +19,7 @@
 
     //first query 
 
-    $query = "SELECT * FROM `users` WHERE `user_id` <> $user_id AND `gender` = '$interest' AND `interest` = '$gender' ORDER BY user_id ASC";
+    $query = "SELECT * FROM `users` WHERE `user_id` <> $user_id AND `user_id` <> 2000 AND `user_id` <> 1000 AND `gender` = '$interest' AND `interest` = '$gender' ORDER BY user_id DESC";
 
     $result = mysqli_query($con, $query);
     //set main array and variable for lopp and array names
