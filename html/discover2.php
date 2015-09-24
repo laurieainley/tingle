@@ -27,7 +27,7 @@ include("header.php");
           </div>
           <div class="cp-circle-control"></div>
           <ul class="cp-controls">
-            <li><span class="cp-play" tabindex="1">play</span></li>
+            <li><span class="cp-play" tabindex="1">Listen to Tingle</span></li>
             <li><span class="cp-pause" style="display:none;" tabindex="1">pause</span></li> <!-- Needs the inline style here, or jQuery.show() uses display:inline instead of display:block -->
           </ul>
         </div>
