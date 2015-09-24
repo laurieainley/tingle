@@ -107,6 +107,9 @@ $(document).ready(function(){
 				$(this).jPlayer("play");
 			} else {
 				currentClip = 0;
+				$(this).jPlayer("clearMedia").jPlayer("setMedia", {
+					oga: "tingles/" + recordings[currentClip].asset_url
+				});
 			}
 		});
 

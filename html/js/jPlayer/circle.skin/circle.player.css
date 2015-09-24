@@ -111,19 +111,19 @@
 }
 
 .cp-controls .cp-play {
-	background: url("controls_360.png") 0 0 no-repeat;
-}
-
-.cp-controls .cp-play:hover {
-	background: url("controls_360.png") -50px 0 no-repeat;
-}
-
-.cp-controls .cp-pause {
 	background: url("controls_360.png") 0 -50px no-repeat;
 }
 
-.cp-controls .cp-pause:hover {
+.cp-controls .cp-play:hover {
 	background: url("controls_360.png") -50px -50px no-repeat;
+}
+
+.cp-controls .cp-pause {
+	background: url("controls_360.png") 0 0 no-repeat;
+}
+
+.cp-controls .cp-pause:hover {
+	background: url("controls_360.png") -50px -0 no-repeat;
 }
 
 .cp-jplayer {
