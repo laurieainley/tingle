@@ -20,10 +20,10 @@ $(document).ready(function(){
 
 	var player = new CirclePlayer("#tingle_player",
 	{
-		//mp3: "https://api.soundcloud.com/tracks/216401156/download?secret_token=s-ecL0w&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-6b668b68c082b",
-		// mp3: "https://api.soundcloud.com/tracks/216393180/download?secret_token=s-fY6Cf&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
-		// mp3: "https://api.soundcloud.com/tracks/216393354/download?secret_token=s-jZbNr&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
-		// mp3: "https://api.soundcloud.com/tracks/216393283/download?secret_token=s-FYzkP&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
+		//oga: "https://api.soundcloud.com/tracks/216401156/download?secret_token=s-ecL0w&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-6b668b68c082b",
+		// oga: "https://api.soundcloud.com/tracks/216393180/download?secret_token=s-fY6Cf&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
+		// oga: "https://api.soundcloud.com/tracks/216393354/download?secret_token=s-jZbNr&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
+		// oga: "https://api.soundcloud.com/tracks/216393283/download?secret_token=s-FYzkP&client_id=02gUJC0hH2ct1EGOcYXQIzRFU91c72Ea&oauth_token=1-138878-164967880-587b42da21a20"
 	}, {
 		cssSelectorAncestor: "#cp_container_1"
 	});
@@ -92,7 +92,7 @@ $(document).ready(function(){
 		console.log("tingles/" + recordings[currentClip].asset_url);
 
 		$("#tingle_player").jPlayer("clearMedia").jPlayer("setMedia", {
-			mp3: "tingles/" + recordings[currentClip].asset_url
+			oga: "tingles/" + recordings[currentClip].asset_url
 		});
 
 		console.log("test");
@@ -101,7 +101,7 @@ $(document).ready(function(){
 			console.log("curr clip " + recordings[currentClip].asset_url);
 				currentClip++;
 			$(this).jPlayer("clearMedia").jPlayer("setMedia", {
-				mp3: "tingles/" + recordings[currentClip].asset_url
+				oga: "tingles/" + recordings[currentClip].asset_url
 			});
 			if(currentClip < recordings.length) {
 				$(this).jPlayer("play");
